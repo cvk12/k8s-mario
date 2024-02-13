@@ -47,7 +47,6 @@ resource "aws_eks_cluster" "example" {
   depends_on = [
 aws_iam_role_policy_attachment.example-AmazonEKSClusterPolicy,
 ]
-}
 
 resource "aws_iam_role" "example1" {
   name = "eks-node-group-cloud"
